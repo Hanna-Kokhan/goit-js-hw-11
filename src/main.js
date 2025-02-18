@@ -18,6 +18,7 @@ form.addEventListener('submit', event => {
     iziToast.show({
       messageColor: '#fff',
       iconColor: '#fff',
+      iconUrl: './img/bi_x-octagon.svg',
       title: '',
       message: 'Please enter a search query!',
       position: 'topRight',
@@ -37,6 +38,7 @@ form.addEventListener('submit', event => {
         messageColor: '#fff',
         color: '#fff',
         iconColor: '#fff',
+        iconUrl: './img/bi_x-octagon.svg',
         backgroundColor: '#ef4040',
         title: '',
         message:
