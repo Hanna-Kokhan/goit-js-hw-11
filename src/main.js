@@ -15,7 +15,7 @@ form.addEventListener('submit', event => {
   event.preventDefault();
   const query = event.target.elements.searchQuery.value.trim();
   if (!query) {
-    iziToast.warning({
+    iziToast.show({
       messageColor: '#fff',
       iconColor: '#fff',
       title: '',
@@ -33,7 +33,7 @@ form.addEventListener('submit', event => {
       renderGallery(images);
     })
     .catch(error => {
-      iziToast.error({
+      iziToast.show({
         messageColor: '#fff',
         color: '#fff',
         iconColor: '#fff',
@@ -43,7 +43,6 @@ form.addEventListener('submit', event => {
           'Sorry, there are no images matching <br> your search query. Please try again!',
         position: 'topRight',
         maxWidth: '432px',
-        maxHeight: '88px',
         borderBottom: '2px solid #ffbebe',
         borderRadius: '4px',
         titlecolor: '#fff',
