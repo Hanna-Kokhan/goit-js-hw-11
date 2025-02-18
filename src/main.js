@@ -36,13 +36,14 @@ form.addEventListener('submit', event => {
       iziToast.error({
         messageColor: '#fff',
         color: '#fff',
+        iconColor: '#fff',
+        backgroundColor: '#ef4040',
         title: '',
         message:
           'Sorry, there are no images matching <br> your search query. Please try again!',
         position: 'topRight',
-        marginRight: '36px',
-        width: '432px',
-        height: '88px',
+        maxWidth: '432px',
+        maxHeight: '88px',
         borderBottom: '2px solid #ffbebe',
         borderRadius: '4px',
         titlecolor: '#fff',

@@ -160,9 +160,6 @@ a {
 }
 
 .iziToast:after {
-  position: fixed;
-  top: 20px;
-  right: 20px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -171,8 +168,6 @@ a {
   border-bottom: 2px solid #ffbebe;
   border-radius: 4px;
   padding: 20px;
-  width: 432px;
-  height: 88px;
   background-color: #ef4040;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
