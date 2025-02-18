@@ -21,7 +21,7 @@ export function fetchImages(query) {
           messageColor: '#ffffff',
           iconColor: '#fff',
           messageSize: '16px',
-          iconUrl: errorIcon,
+          iconUrl: './img/bi_x-octagon.svg',
           transitionIn: 'bounceInLeft',
           position: 'topRight',
           displayMode: 'replace',
