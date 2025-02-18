@@ -18,7 +18,7 @@ export function fetchImages(query) {
       if (response.data.hits.length === 0) {
         iziToast.show({
           backgroundColor: 'rgba(239, 64, 64, 1)',
-          messageColor: '#FAFAFB',
+          messageColor: '#ffffff',
           messageSize: '16px',
           iconUrl: errorIcon,
           transitionIn: 'bounceInLeft',

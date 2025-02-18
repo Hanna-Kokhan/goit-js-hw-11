@@ -16,8 +16,11 @@ form.addEventListener('submit', event => {
   const query = event.target.elements.searchQuery.value.trim();
   if (!query) {
     iziToast.warning({
-      title: 'Warning',
+      messageColor: '#fff',
+      iconColor: '#fff',
+      title: '',
       message: 'Please enter a search query!',
+      position: 'topRight',
     });
     return;
   }
@@ -31,12 +34,20 @@ form.addEventListener('submit', event => {
     })
     .catch(error => {
       iziToast.error({
+        messageColor: '#fff',
+        color: '#fff',
         title: '',
         message:
-          'Sorry, there are no images matching your search query. Please try again!',
-        class: 'custom-error-toast',
+          'Sorry, there are no images matching <br> your search query. Please try again!',
         position: 'topRight',
-        timeout: 5000,
+        marginRight: '36px',
+        width: '432px',
+        height: '88px',
+        borderBottom: '2px solid #ffbebe',
+        borderRadius: '4px',
+        titlecolor: '#fff',
+        top: '20px',
+        right: '20px',
       });
     })
     .finally(() => {
