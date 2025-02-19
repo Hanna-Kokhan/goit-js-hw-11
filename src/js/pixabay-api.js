@@ -21,7 +21,6 @@ export function fetchImages(query) {
           messageColor: '#ffffff',
           iconColor: '#fff',
           messageSize: '16px',
-          iconUrl: '/goit-js-hw-11/img/bi_x-octagon.svg',
           transitionIn: 'bounceInLeft',
           position: 'topRight',
           displayMode: 'replace',
