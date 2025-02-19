@@ -1,5 +1,7 @@
 import axios from 'axios';
 
+import iconPath from '../img/bi_x-octagon.svg';
+
 const API_KEY = '48886188-3f23dcecdc45a7bc3ec26601c';
 const BASE_URL = 'https://pixabay.com/api/';
 
@@ -20,6 +22,7 @@ export function fetchImages(query) {
           backgroundColor: 'rgba(239, 64, 64, 1)',
           messageColor: '#ffffff',
           iconColor: '#fff',
+          iconUrl: iconPath,
           messageSize: '16px',
           transitionIn: 'bounceInLeft',
           position: 'topRight',

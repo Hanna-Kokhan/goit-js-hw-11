@@ -7,6 +7,8 @@ import 'izitoast/dist/css/iziToast.min.css';
 import { fetchImages } from './js/pixabay-api.js';
 import { renderGallery } from './js/render-functions.js';
 
+import iconPath from './img/bi_x-octagon.svg';
+
 const form = document.querySelector('.search-form');
 const loader = document.querySelector('.loader');
 const gallery = document.querySelector('.gallery');
@@ -18,6 +20,7 @@ form.addEventListener('submit', event => {
     iziToast.show({
       messageColor: '#fff',
       iconColor: '#fff',
+      iconUrl: iconPath,
       title: '',
       message: 'Please enter a search query!',
       position: 'topRight',
@@ -37,6 +40,7 @@ form.addEventListener('submit', event => {
         messageColor: '#fff',
         color: '#fff',
         iconColor: '#fff',
+        iconUrl: iconPath,
         backgroundColor: '#ef4040',
         title: '',
         message:
